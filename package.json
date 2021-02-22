@@ -5,7 +5,14 @@
   "repository": "git@github.com:caiotracera/nps-node.git",
   "author": "Caio Tracera <ctrcra@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --watch --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
+    "start": "ts-node src/shared/infra/http/index.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "lint": "eslint --fix --ext .js,.ts,.json .",
+    "test": "jest"
+  },
   "dependencies": {
     "celebrate": "^13.0.4",
     "cors": "^2.8.5",
