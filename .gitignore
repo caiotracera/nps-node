@@ -12,4 +12,5 @@ tmp/uploads/*
 .DS_Store
 
 .env
-ormconfig.json
+src/database/*
+!src/database/.gitkeep
