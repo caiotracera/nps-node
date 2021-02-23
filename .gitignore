@@ -12,5 +12,4 @@ tmp/uploads/*
 .DS_Store
 
 .env
-src/database/*
-!src/database/.gitkeep
+src/database/database.sqlite
