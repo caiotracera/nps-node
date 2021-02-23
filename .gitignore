@@ -12,4 +12,4 @@ tmp/uploads/*
 .DS_Store
 
 .env
-src/database/database.sqlite
+src/shared/infra/typeorm/database.sqlite
